@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>With Statement</title>
+</head>
+<body>
+  <script type="text/javascript">
+  	//set the scope of the code  within a particular Object.
+  	var ls= location.search.subString(1);
+  	var hostName= location.hostName;
+  	var url= location.ref;
+
+  	//so we can replaece with scope.
+  	with(location){
+       var ls= search.subString(1);
+        var hostName= hostName;
+        var url=href;
+               
+  	}
+  </script>
+</body>
+</html>
