@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>document Object :properties</title>
+</head>
+<body>
+<div id= "myDiv">
+	
+</div>
+<script type="text/javascript">
+	
+	var html= document.documentElement;
+	console.log(html== document.childNodes[0]);
+	console.log(html== document.firstChild);
+	var body= document.body;
+	console.log(body);
+	var docType= document.docType;
+	console.log(docType);
+	//get the document title..
+	var original = document.title;
+	//set title value
+	document.title= "New Page Title";
+
+	// get domian name,url, refer
+	var url= document.URL;
+	//get the domaion:
+	var domain= document.domain;
+	console.log(url);
+
+
+</script>
+</body>
+</html>
+

@@ -5,7 +5,7 @@
     alert("Hello " +name+"," +message);
 }
 
-    sayHi("Twinkle","How are you today?");
+    sayHi("Twinkle","How are you today ?");
 
   function isChecking(){
   	var number=0;
@@ -42,6 +42,7 @@ function howManyArguments(){
 
 howManyArguments("Rana", 1234, 78978);
 howManyArguments("Welcoxme", "Ram");
+
 
 function addNumber(){
 	if(arguments.length==1){

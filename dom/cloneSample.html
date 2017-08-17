@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clone Example</title>
+</head>
+<body>
+<ul id="myList">
+	<li>item1</li>
+	<li>item2</li>
+	<li>item3</li>
+	<li>item4</li>
+</ul>
+<script type="text/javascript">
+	
+	/** clone node that is returned by the document that has no parent .
+	   clone node is orphan and does not exist in the document until added via appendChild(), insertBefore(), or replaceChild()
+*/
+  var myList=document.getElementById("myList");
+  console.log(myList);
+  var deepList= myList.cloneNode(true);
+  console.log(deepList.childNodes.length);
+
+//shallow List:--
+  var shallowList= myList.cloneNode(false);
+  console.log(shallowList.childNodes.length);
+  
+</script>
+
+</body>
+</html>

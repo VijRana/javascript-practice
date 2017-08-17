@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Append Example</title>
+</head>
+<body>
+<p>Append sample</p>
+<div id= "divID"></div>
+<script type="text/javascript">
+  var divNode= document.getElementById("divID");
+  var script = document.createElement("script");
+  var returnNode= divNode.appendChild(script);
+  console.log(returnNode==script);
+  console.log(divNode.lastChild==script);
+
+</script>
+</body>
+</html>

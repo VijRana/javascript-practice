@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get element By Tag!</title>
+</head>
+<body>
+<img src="" name="img1">
+<img src="" name="img2">
+<img src="" name="img3">
+<img src="" name="img4">
+<img src="" name="img5">
+<img src="" name="img6">
+<script type="text/javascript">
+	
+	var images= document.getElementsByTagName("img");
+	console.log(images.toString());
+	var myImage= images.namedItem("img2");
+	console.log(myImage.toString());
+</script>
+
+</body>
+</html>
