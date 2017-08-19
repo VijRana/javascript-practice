@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IE Event Handler!!</title>
+</head>
+<body>
+    <input type="button" id="myBtn" value="Click Me" />
+    <p>This example works only in Internet Explorer.</p>
+      attachEvent removed from IE11.
+    <script type="text/javascript">
+        var btn = document.getElementById("myBtn");
+        btn.attachEvent("onclick", function(){
+            alert("Clicked");
+        });
+        btn.attachEvent("onclick", function(){
+            alert("Hello world!");
+        });
+
+    </script>
+</body>
+</html>
